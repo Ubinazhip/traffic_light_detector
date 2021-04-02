@@ -1,0 +1,27 @@
+
+Place put your video inside yolov3 folder
+1)  Run the docker file:
+
+sudo docker build -f Dockerfile -t yolov .
+
+2) go into the docker:
+sudo nvidia-docker run --ipc=host -itd --name=yolov3 yolov bash
+sudo nvidia-docker exec -it yolov2 bash
+
+
+3) To plot the bboxes and save vide, specify the videoname in --source argument, device number can also be specified: (use --conf-thres 0.35  --iou 0.1)
+
+
+Example:
+CUDA_VISIBLE_DEVICE=0 python3 detect.py --weights ./my_model/best.pt --source test_video_3.mp4 --conf-thres 0.35  --iou 0.1
+
+4)In order to check the inference fps and to save json file that have prediction information run the following in similar manner: 
+CUDA_VISIBLE_DEVICE=0 python3 detect_save_json.py --weights ./my_model/best.pt --source test_video_1.mp4 --conf-thres 0.35  --iou 0.1
+
+
+
+
+-----------------------------------------------------------
+Note that
+sometimes docker doesn't copy best.pt model from the local into the docker, so please in that case from local run:
+sudo docker cp best.pt yolov3:/home/aslan/docker/my_model/
