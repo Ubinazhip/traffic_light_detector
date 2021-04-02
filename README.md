@@ -6,3 +6,7 @@ In the configuration folder there are some scripts in which we changed the numbe
 [![Video2](https://img.youtube.com/vi/UPnKbZqYpZM/0.jpg)](https://www.youtube.com/watch?v=UPnKbZqYpZM)
 
 The second approach was to use a popular framework (mmdetection). MMDetection is an open source object detection toolbox based on PyTorch. We have decided to use it because of its very good documentation and easiness in use. The main document we will be using is a config file, where you basically set parameters of your model as well as parameters of training and testing pipeline. We have trained there 2 models: one just for 1000 images (frames from videos,which were provided by the lecturer) and one for the bosch dataset + around 800 images of that 1000 images. However, we had problems with speed in inference - we were able to reach maximum of 25 FPS using Tesla v100 GPU which is not enough. The problem was that the docker didn’t utilize all GPU (only 8-9%) and we couldn’t fix it.
+
+forked from: 
+https://github.com/ultralytics/yolov3 
+https://github.com/abewley/sort
