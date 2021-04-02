@@ -1,4 +1,4 @@
-#commands 
+# commands 
 The main files are inside yolov3 folders and see the text file commands to run the program 
 # Traffic light detector
 We used Bosch Small Traffic Lights Dataset to train YOLOv3-tiny and for transfer learning we took the darknet53 model pre-trained on VOCdata. YOLO is fast enogh, so it'a good option for real time image recognition. Another good thing is that it supports well known datasets, in particular, Pascal VOC. Bosch Small Traffic Lights Dataset is coming with a Python script which turns the dataset into Pascal-VOC like dataset.
