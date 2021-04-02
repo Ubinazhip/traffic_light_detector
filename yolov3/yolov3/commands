@@ -6,7 +6,7 @@ sudo docker build -f Dockerfile -t yolov .
 
 2) go into the docker:
 sudo nvidia-docker run --ipc=host -itd --name=yolov3 yolov bash
-sudo nvidia-docker exec -it yolov2 bash
+sudo nvidia-docker exec -it yolov3 bash
 
 
 3) To plot the bboxes and save vide, specify the videoname in --source argument, device number can also be specified: (use --conf-thres 0.35  --iou 0.1)
