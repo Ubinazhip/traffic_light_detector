@@ -19,7 +19,6 @@ Since the task was real time detection, we have decided to use Yolo, but big yol
 ## PostProcessing - Tracker 
 We integrated SORT tracker from this [github](https://github.com/abewley/sort), which uses Kalman Filter to track the objects. It helped to smoothen the results from detector. <br />
 See the result [with tracker](https://drive.google.com/drive/folders/1aAjVramYn65WpbmLqHGEC43wAiyjXH0K?usp=sharing) and [without tracker](https://drive.google.com/drive/folders/1_cojRWh6FK0yb-5J8XPW9seh_DlbeeVX?usp=sharing)
-# Results
 
 # Authors
 Aslan Ubingazhibov - Data Science, Higher School of Economics, aubinagzhibov@edu.hse.ru <br/>
