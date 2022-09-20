@@ -18,7 +18,7 @@ see the [annotations](https://drive.google.com/drive/folders/1g5q8Ucv6siXylpvj9U
 Since the task was real time detection, we have decided to use Yolo, but big yolo wasn't fast enough in our GPUs (GTX 1070), so we used tiny yolo with 23 layers. 
 ## PostProcessing - Tracker 
 We integrated SORT tracker from this [github](https://github.com/abewley/sort), which uses Kalman Filter to track the objects. It helped to smoothen the results from detector. <br />
-See the result [with tracker](https://drive.google.com/drive/folders/1aAjVramYn65WpbmLqHGEC43wAiyjXH0K?usp=sharing) and [without tracker](https://drive.google.com/drive/folders/1_cojRWh6FK0yb-5J8XPW9seh_DlbeeVX?usp=sharing)
+See the result [with tracker](https://drive.google.com/drive/folders/10Nht0CbSyK4LDncjxdbB2k6YQExua1CU?usp=sharing)
 
 # Authors
 Aslan Ubingazhibov - Data Science, Higher School of Economics, aubinagzhibov@edu.hse.ru <br/>
